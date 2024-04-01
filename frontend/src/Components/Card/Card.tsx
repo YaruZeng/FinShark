@@ -2,6 +2,7 @@ import React, { SyntheticEvent } from 'react'
 import "./Card.css";
 import { CompanySearch } from '../../company';
 import AddPortfolio from '../Portfolio/AddPortfolio/AddPortfolio';
+import { Link } from 'react-router-dom';
 
 interface Props {
   id: string;
@@ -20,9 +21,9 @@ const Card: React.FC<Props> = ({id, searchResult, onPortfolioCreate}: Props) : J
       {searchResult.name} ({searchResult.symbol})
     </h2>
     <p className="text-black">{searchResult.currency}</p>
-    <p className="font-bold text-black">
+    <Link to={`/company/${searchResult.symbol}`} className="font-bold text-black" >
       {searchResult.exchangeShortName} - {searchResult.stockExchange}
-    </p>
+    </Link>
     <AddPortfolio
       onPortfolioCreate={onPortfolioCreate}
       symbol={searchResult.symbol}
