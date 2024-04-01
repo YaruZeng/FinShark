@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^5.0.4"
+  }
+}
