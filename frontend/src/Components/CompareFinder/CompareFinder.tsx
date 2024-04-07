@@ -15,7 +15,7 @@ const CompareFinder = ({ ticker }: Props) => {
       setCompareData(value?.data[0]);
     };
     getCompanyCompareData();
-  }, []);
+  }, [ticker]);
   return (
     <div className="inline-flex rounded-md shadow-sm m-4">
       {compareData?.peersList.map((ticker) => {

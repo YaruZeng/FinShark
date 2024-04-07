@@ -1,3 +1,5 @@
+import { StringLiteral } from "typescript";
+
 export interface CompanySearch {
   currency: string;
   exchangeShortName: string;
@@ -405,4 +407,14 @@ export interface CompanyKeyMetrics {
 export interface CompanyCompareData {
   symbol: string;
   peersList: string[];
+}
+
+export interface CompanyTenK {
+  symbol: string;
+  fillingdate: string;
+  accepteddate: string;
+  cik: string;
+  type: string;
+  link: string;
+  finalLink: string;
 }

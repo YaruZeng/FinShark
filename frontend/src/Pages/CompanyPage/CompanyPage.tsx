@@ -6,6 +6,7 @@ import Sidebar from "../../Components/Sidebar/Sidebar";
 import CompanyDashboard from "../../Components/CompanyDashboard/CompanyDashboard";
 import Tile from "../../Components/Tile/Tile";
 import CompareFinder from "../../Components/CompareFinder/CompareFinder";
+import TenKFinder from "../../Components/TenKFinder/TenKFinder";
 
 interface Props {}
 
@@ -31,7 +32,9 @@ const CompanyPage = (props: Props) => {
             <Tile title="Price" subTitle={company.price.toString()} />
             <Tile title="Sector" subTitle={company.sector} />
             <Tile title="Market Cap" subTitle={company.mktCap.toString()} />
-            <CompareFinder ticker={company.symbol} />
+            {/* <CompareFinder ticker={company.symbol} /> */}
+            <TenKFinder ticker={company.symbol} />
+            <p className="p-4 text-md text-gray-700">{company.description}</p>
           </CompanyDashboard>
         </div>
       ) : (
