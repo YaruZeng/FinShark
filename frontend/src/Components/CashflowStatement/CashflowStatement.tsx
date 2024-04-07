@@ -4,6 +4,7 @@ import { useOutlet, useOutletContext } from "react-router";
 import { getCashflowStatement } from "../../api";
 import RatioList from "../RatioList/RatioList";
 import Table from "../Table/Table";
+import Spinner from "../Spinner/Spinner";
 
 type Props = {};
 const config = [
@@ -60,7 +61,7 @@ const CashflowStatement = (props: Props) => {
       {cashflowStatement ? (
         <Table config={config} data={cashflowStatement} />
       ) : (
-        <div>Company not found! </div>
+        <Spinner />
       )}
     </>
   );
