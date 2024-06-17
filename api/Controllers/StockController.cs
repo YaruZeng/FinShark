@@ -75,7 +75,7 @@ namespace api.Controllers
 
             if (stockModel == null) 
             {
-                return NotFound();
+                return NotFound("Stock does not exist.");
             }
 
             return NoContent();
