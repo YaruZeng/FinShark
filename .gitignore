@@ -135,5 +135,5 @@ node_modules
 
 .fake
 
-appsettings.json
-appsettings.Development.json
+# api setting
+appsettings.*
