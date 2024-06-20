@@ -4,7 +4,11 @@ import { useOutletContext } from "react-router";
 import { getKeyMetrics } from "../../api";
 import RatioList from "../RatioList/RatioList";
 import Spinner from "../Spinner/Spinner";
-import { formatLargeNonMonetaryNumber, formatRatio } from "../Helpers/NumberFormtting";
+import {
+  formatLargeNonMonetaryNumber,
+  formatRatio,
+} from "../Helpers/NumberFormtting";
+import StockComment from "../StockComment/StockComment";
 
 type Props = {};
 
@@ -87,15 +91,18 @@ const CompanyProfile = (props: Props) => {
     };
     getCompanyKeyMetrics();
   }, []); // remember to put the [] to prevent requesting the api for tons of times
-  return <>
-  {
-    companyData ? (
-      <RatioList data={companyData} config={tableConfig}/>
-    ) : (
-      <Spinner /> // show this until the company data is got
-    )
-  }
-  </>
+  return (
+    <>
+      {companyData ? (
+        <>
+          <RatioList data={companyData} config={tableConfig} />
+          <StockComment stockSymbol={ticker} />
+        </>
+      ) : (
+        <Spinner /> // show this until the company data is got
+      )}
+    </>
+  );
 };
 
 export default CompanyProfile;
