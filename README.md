@@ -11,7 +11,7 @@ A financial platform where people can get real-time stock data, manage their own
 
 If you want to run the app on your local server, please follow the instructions:
 
-1) Clone the repository into your computer.
+1) Clone the repository into your computer, install all dependencies.
    
 2) Create a SQLServer database on Azure data studio or SQL Server Management Studio, get the connection string.
    
@@ -37,9 +37,11 @@ If you want to run the app on your local server, please follow the instructions:
 }
 ```
 
-4) Enter the "api" directory, run the backend app on C# ASP.NET default port:
+4) Enter the "api" directory, set up SQL server database by EF core, and run the backend app on C# ASP.NET default port:
 ```unit
 cd api
+dotnet ef migrations add Init
+dotnet ef database update
 dotnet watch run
 ```
 
@@ -49,7 +51,7 @@ cd frontend
 npm start
 ```
 
-6) If you do the above right, you can now visit the app at the React default IP address. You have to log in to visit Search & Portfolio Page and Stock Detail Page.
+6) If you do the above right, you can now visit the app at the React default IP address. You have to sign up and log in to visit Search & Portfolio Page and Stock Detail Page.
 
 * Homepage
   
