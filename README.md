@@ -70,4 +70,5 @@ npm start
 * Stock Detail Page, including children routes to company profile, income statement, balance sheet, and cashflow statement
   
 ![image](https://github.com/YaruZeng/FinShark/assets/91594306/a92e8bcd-b64a-4811-a5fe-e391e22528a7)
+![image](https://github.com/YaruZeng/FinShark/assets/91594306/5f4b7b46-1791-49a7-a130-c278727519df)
 
