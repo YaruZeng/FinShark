@@ -49,7 +49,7 @@ cd frontend
 npm start
 ```
 
-6) If you do the above right, you can now visit the app at http://localhost:3000. You have to log in to visit Search & Portfolio Page and Stock Detail Page.
+6) If you do the above right, you can now visit the app at the React default IP address. You have to log in to visit Search & Portfolio Page and Stock Detail Page.
 
 * Homepage
   
