@@ -1,5 +1,5 @@
 # FinShark
-A financial platform where people can get free insights into stocks, manage their own stock portfolios, post and read comments on stocks. 
+A financial platform where people can get real-time stock data, manage their own stock portfolios, post and read comments on stocks. 
 
 # Tech stacks
   * Frontend: React, TypeScript, TailwindCSS
