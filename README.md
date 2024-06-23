@@ -3,7 +3,7 @@ A financial platform where people can get free insights into stocks, manage thei
 
 # Tech stacks
   * Frontend: React, TypeScript, TailwindCSS
-  * Backend: C# ASP.Net, Entity Framework Core
+  * Backend: C# ASP.NET, Entity Framework Core
   * Database: SQLServer
   * User Authentication: JWT
 
