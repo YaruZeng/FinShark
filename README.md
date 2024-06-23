@@ -15,7 +15,7 @@ If you want to run the app on your local server, please follow the instructions:
    
 2) Create a SQLServer database on Azure data studio or SQL Server Management Studio, get the connection string.
    
-3) Add a "appsettings.json" file under the "api" directory, set all the secret keys including the database connection string, JWT Signing key, C# default IP address (eg. http://localhost:5710), FMP API key (you can get a key at https://site.financialmodelingprep.com/). The following is an example of the file.
+3) Add a "appsettings.json" file under the "api" directory, set all the secret keys including the database connection string, JWT signing key, C# default IP address (eg. http://localhost:5710), FMP API key (you can get a key at https://site.financialmodelingprep.com/). The following is an example of the file.
 ```json
 {
   "ConnectionStrings": {
