@@ -37,7 +37,7 @@ If you want to run the app on your local server, please follow the instructions:
 }
 ```
 
-4) Enter the "api" directory, set up SQL server database by EF core, and run the backend app on C# ASP.NET default port:
+4) Enter the "api" directory, set up SQL server database by EF core, and run the backend app on ASP.NET default port:
 ```unit
 cd api
 dotnet ef migrations add Init
